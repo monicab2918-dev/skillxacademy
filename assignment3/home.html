@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Assignment</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+/* Common Page Style */
+.page {
+    height: 100vh; /* full screen like a page */
+    padding: 100px;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+
+/* Page 1 */
+.page1 {
+    background-image: url("https://wallpapers.com/images/hd/coolest-purple-sky-g6ee8rafpi7hefcr.jpg");
+    background-size: cover;
+}
+
+/* Page 2 */
+.page2 {
+    background-image: url("https://tse1.mm.bing.net/th/id/OIP.mRdOf3ziNm8ibRadvCoJQAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3");
+    background-size: cover;
+}
+
+/* Page 3 */
+.page3 {
+    background-image: url("https://wallpapers.com/images/hd/coolest-purple-sky-g6ee8rafpi7hefcr.jpg");
+    background-size: cover;
+}
+
+/* Page 4 Background */
+.page4 {
+    background-color: rgb(222, 222, 4);
+    color: black;
+    background-size: cover;
+    background: red;
+}
+    /* Class Selector */
+    .cool-text {
+      color: teal;
+      font-style: italic;
+      border: 2px solid teal;
+    }
+
+    /* ID Selector */
+    #unique-text {
+      color: darkred;
+      font-weight: bold;
+      border: 2px dashed darkred;
+    }
+
+    /* Descendant Selector */
+    .highlight-box p {
+      background-color: #f9f871;
+      padding: 5px;
+      border: 2px solid orange ;
+    }
+
+    /* Grouping Selector */
+    h3, h4 {
+      color: navy;
+      font-family: Arial, sans-serif;
+    }
+    </style>
+
+</head>
+<body>
+
+<!-- PAGE 1 -->
+<div class="page page1">
+    <h1>This is the First Page</h1>
+    <p>This page uses a background image.</p>
+    <p>SkillXAcademy </p>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page page2">
+    <h1>This is the Second Page</h1>
+    <p>This page also contains a background image.</p>
+    
+</div>
+
+<!-- PAGE 3 -->
+<div class="page page3">
+    <h1>This is the Third Page</h1>
+    <p>This is the third page with background image.</p>
+    
+</div>
+
+<!-- PAGE 4 -->
+ <h2>1. Class Selector</h2>
+
+  <p class="cool-text">This paragraph is styled using a Class Selector (.cool-text).</p>
+<br>
+<h2>2. ID Selector</h2>
+
+  <p id="unique-text">This paragraph is styled using an ID Selector (#unique-text).</p>
+<br>
+<h2>3. Descendant Selector</h2>
+
+  <div class="highlight-box">
+    <p>This paragraph is inside a div. It is styled because it is a descendant of the class .highlight-box.</p>
+  </div>
+<br>
+<h2>4. Grouping Selector</h2>
+  <p>This paragraph is NOT inside the div, so it doesn't get the special style.</p>
+  <h3><u>This is an H3 Heading</u></h3>
+  <h4><u>This is an H4 Heading</u></h4>
+  <p>Both headings above share the same color and font using a Grouping Selector (h3, h4).</p>
+
+</body>
+</html>
