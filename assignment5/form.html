@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SkillXAcademy Form</title>
+
+<style>
+body {
+    font-family: Arial;
+    background: linear-gradient(to right, white, white);
+    margin: 0;
+    padding: 0;
+}
+
+/* Form Box */
+.form-container {
+    width: 400px;
+    background: white;
+    padding: 25px;
+    margin: 80px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Input Fields */
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* Button */
+button {
+    width: 100%;
+    background: #c2f3be;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #79e704;
+}
+</style>
+
+</head>
+<body>
+
+<div class="form-container">
+    <h2>SkillXAcademy Registration Form</h2>
+
+    <form>
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name">
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email">
+
+        <label>Phone Number</label>
+        <input type="number" placeholder="Enter your phone number">
+
+        <label>Select Course</label>
+        <select>
+            <option>Web Development</option>
+            <option>Python Programming</option>
+            <option>AI & Data Science</option>
+            <option>Frontend Internship</option>
+        </select>
+
+        <label>Message</label>
+        <textarea rows="3" placeholder="Write your message"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
