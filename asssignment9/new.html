@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Netflix Clone Responsive</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: black;
+    color: white;
+}
+
+/* Header */
+header {
+    background: url('https://picsum.photos/1200/600') no-repeat center/cover;
+    height: 100vh;
+}
+
+.overlay {
+    background: rgba(0,0,0,0.7);
+    height: 100%;
+    padding: 20px 60px;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    color: red;
+    font-size: 32px;
+}
+
+nav button {
+    padding: 8px 20px;
+    background: red;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    margin-top: 150px;
+    max-width: 600px;
+}
+
+.hero h2 {
+    font-size: 50px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.hero input {
+    padding: 10px;
+    width: 60%;
+    border: none;
+    border-radius: 3px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background: red;
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+
+/* Movies Section */
+.movies {
+    padding: 40px;
+}
+
+.movies h2 {
+    margin-bottom: 15px;
+}
+
+.movie-row {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+}
+
+.movie-row img {
+    width: 200px;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    color: gray;
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+
+/* Tablet */
+@media (max-width: 900px) {
+    .hero h2 {
+        font-size: 36px;
+    }
+    .hero input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .overlay {
+        padding: 20px;
+    }
+
+    .hero {
+        margin-top: 80px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .movie-row img {
+        width: 140px;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<div class="overlay">
+
+<nav>
+    <h1>NETFLIX</h1>
+    <button>Sign In</button>
+</nav>
+
+<div class="hero">
+    <h2>Unlimited Movies, TV Shows and More.</h2>
+    <p>Watch anywhere. Cancel anytime.</p>
+    <p>Ready to watch? Enter your email to create or restart your membership.</p>
+
+    <input type="email" placeholder="Email address">
+    <button>Get Started</button>
+</div>
+
+</div>
+</header>
+
+<!-- Movies Section -->
+<div class="movies">
+    <h2>Popular on Netflix</h2>
+    <div class="movie-row">
+        <img src="https://picsum.photos/200/300?1">
+        <img src="https://picsum.photos/200/300?2">
+        <img src="https://picsum.photos/200/300?3">
+        <img src="https://picsum.photos/200/300?4">
+        <img src="https://picsum.photos/200/300?5">
+    </div>
+</div>
+
+<div class="movies">
+    <h2>Trending Now</h2>
+    <div class="movie-row">
+        <img src="https://picsum.photos/200/300?6">
+        <img src="https://picsum.photos/200/300?7">
+        <img src="https://picsum.photos/200/300?8">
+        <img src="https://picsum.photos/200/300?9">
+        <img src="https://picsum.photos/200/300?10">
+    </div>
+</div>
+
+<footer>
+<p>© 2026 Netflix Clone | Created by Monica</p>
+</footer>
+
+</body>
+</html>

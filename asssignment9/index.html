@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Internship Dashboard</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    background: #1f2937;
+    color: white;
+    position: fixed;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px 0;
+    background: #374151;
+    border-radius: 5px;
+}
+
+/* Main Content */
+.main {
+    margin-left: 240px;
+    padding: 20px;
+}
+
+/* Profile Card */
+.profile {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.profile img {
+    width: 80px;
+    border-radius: 50%;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Assignment Table */
+table {
+    width: 100%;
+    margin-top: 20px;
+    background: white;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background: #1f2937;
+    color: white;
+}
+</style>
+
+</head>
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar">
+    <h2>SkillX Dashboard</h2>
+    <a href="#">Home</a>
+    <a href="#">Profile</a>
+    <a href="#">Assignments</a>
+    <a href="#">Progress</a>
+    <a href="#">Logout</a>
+</div>
+
+<!-- Main Content -->
+<div class="main">
+
+    <!-- Profile -->
+    <div class="profile">
+        <img src="https://picsum.photos/100">
+        <div>
+            <h3>Monica N</h3>
+            <p>Web Development Intern</p>
+        </div>
+    </div>
+
+    <!-- Cards -->
+    <div class="cards">
+        <div class="card">
+            <h3>HTML</h3>
+            <p>Completed</p>
+        </div>
+
+        <div class="card">
+            <h3>CSS</h3>
+            <p>Completed</p>
+        </div>
+
+        <div class="card">
+            <h3>Projects</h3>
+            <p>3 Done</p>
+        </div>
+    </div>
+
+    <!-- Assignments Table -->
+    <h3>Assignments Status</h3>
+    <table>
+        <tr>
+            <th>Assignment</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>HTML Website</td>
+            <td>Completed</td>
+        </tr>
+        <tr>
+            <td>CSS Form Design</td>
+            <td>Completed</td>
+        </tr>
+        <tr>
+            <td>Website Clone</td>
+            <td>In Progress</td>
+        </tr>
+    </table>
+
+</div>
+
+</body>
+</html>

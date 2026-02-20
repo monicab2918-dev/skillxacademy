@@ -67,6 +67,16 @@ button {
 button:hover {
     background: #0056b3;
 }
+
+/* Submitted Message */
+#successMessage {
+    display: none;
+    text-align: center;
+    color: green;
+    font-size: 20px;
+    margin-top: 15px;
+    font-weight: bold;
+}
 </style>
 
 </head>
@@ -83,7 +93,7 @@ button:hover {
     <div class="form-box">
         <h2>Contact Form</h2>
 
-        <form>
+        <form onsubmit="showMessage(event)">
             <input type="text" placeholder="Enter Name" required>
             <input type="email" placeholder="Enter Email" required>
             <input type="number" placeholder="Enter Phone Number">
@@ -91,9 +101,18 @@ button:hover {
 
             <button type="submit">Submit</button>
         </form>
+
+        <div id="successMessage">✅ Form Submitted Successfully!</div>
     </div>
 
 </div>
+
+<script>
+function showMessage(event) {
+    event.preventDefault(); // stop page refresh
+    document.getElementById("successMessage").style.display = "block";
+}
+</script>
 
 </body>
 </html>
