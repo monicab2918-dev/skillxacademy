@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Events Assignment</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: white;
+    padding: 25px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+}
+
+button {
+    width: 100%;
+    padding: 8px;
+    background: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.message {
+    font-size: 14px;
+    margin-top: 5px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Registration Form</h2>
+
+    <form id="myForm">
+        <!-- INPUT + KEYUP + KEYDOWN -->
+        <input type="text" id="name" placeholder="Enter Name">
+
+        <!-- INPUT EVENT -->
+        <input type="email" id="email" placeholder="Enter Email">
+
+        <!-- CHANGE EVENT -->
+        <select id="course">
+            <option value="">Select Course</option>
+            <option>Web Development</option>
+            <option>Java Programming</option>
+            <option>Python</option>
+        </select>
+
+        <button type="submit">Submit</button>
+        <div class="message" id="message"></div>
+    </form>
+</div>
+
+<script>
+
+// KEYDOWN EVENT
+document.getElementById("name").addEventListener("keydown", function() {
+    document.getElementById("message").innerText = "Key is pressed...";
+});
+
+// KEYUP EVENT
+document.getElementById("name").addEventListener("keyup", function() {
+    document.getElementById("message").innerText = "You typed: " + this.value;
+});
+
+// INPUT EVENT
+document.getElementById("email").addEventListener("input", function() {
+    document.getElementById("message").innerText = "Typing email...";
+});
+
+// CHANGE EVENT
+document.getElementById("course").addEventListener("change", function() {
+    document.getElementById("message").innerText = "Selected course: " + this.value;
+});
+
+// SUBMIT EVENT
+document.getElementById("myForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    document.getElementById("message").innerText = "Form Submitted Successfully!";
+});
+
+</script>
+
+</body>
+</html>
