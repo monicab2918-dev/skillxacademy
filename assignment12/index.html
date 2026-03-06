@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Startup Landing Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:#f4f6fb;
+}
+
+/* HEADER */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:white;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+font-size:20px;
+font-weight:bold;
+color:#4f46e5;
+}
+
+.logo img{
+width:35px;
+}
+
+nav a{
+margin:0 15px;
+text-decoration:none;
+color:#333;
+font-weight:500;
+}
+
+/* HERO SECTION */
+
+.hero{
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+justify-content:space-between;
+padding:60px;
+}
+
+.hero-text{
+flex:1;
+}
+
+.hero-text h1{
+font-size:40px;
+margin-bottom:15px;
+color:#222;
+}
+
+.hero-text p{
+margin-bottom:20px;
+color:#555;
+}
+
+.hero-text button{
+padding:12px 25px;
+background:#4f46e5;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+.hero img{
+width:380px;
+border-radius:10px;
+}
+
+/* FEATURES */
+
+.features{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+padding:50px;
+}
+
+.feature{
+background:white;
+width:260px;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+text-align:center;
+transition:0.3s;
+}
+
+.feature:hover{
+transform:translateY(-8px);
+}
+
+.feature img{
+width:80px;
+margin-bottom:15px;
+}
+
+/* PRICING */
+
+.pricing-title{
+text-align:center;
+font-size:28px;
+margin-top:20px;
+}
+
+.pricing{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+justify-content:center;
+padding:40px;
+}
+
+.plan{
+background:white;
+padding:25px;
+width:220px;
+border-radius:10px;
+text-align:center;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+.plan h3{
+margin-bottom:10px;
+}
+
+.plan p{
+color:#4f46e5;
+font-size:20px;
+font-weight:bold;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+gap:10px;
+}
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero img{
+margin-top:25px;
+width:300px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png">
+SkillStart
+</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Features</a>
+<a href="#">Pricing</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-text">
+<h1>Grow Your Business With Us</h1>
+<p>We help startups grow faster with powerful digital solutions and marketing strategies.</p>
+<button>Get Started</button>
+</div>
+
+<img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d">
+
+</section>
+
+<section class="features">
+
+<div class="feature">
+<img src="https://cdn-icons-png.flaticon.com/512/4149/4149671.png">
+<h3>Analytics</h3>
+<p>Track your business growth using smart analytics tools.</p>
+</div>
+
+<div class="feature">
+<img src="https://cdn-icons-png.flaticon.com/512/1995/1995574.png">
+<h3>Marketing</h3>
+<p>Promote your brand globally with our marketing strategies.</p>
+</div>
+
+<div class="feature">
+<img src="https://cdn-icons-png.flaticon.com/512/1828/1828817.png">
+<h3>Support</h3>
+<p>Get 24/7 support from our expert technical team.</p>
+</div>
+
+</section>
+
+<h2 class="pricing-title">Our Pricing</h2>
+
+<section class="pricing">
+
+<div class="plan">
+<h3>Basic</h3>
+<p>$10/month</p>
+</div>
+
+<div class="plan">
+<h3>Pro</h3>
+<p>$25/month</p>
+</div>
+
+<div class="plan">
+<h3>Premium</h3>
+<p>$50/month</p>
+</div>
+
+</section>
+
+</body>
+</html>
